@@ -12,8 +12,8 @@ x_train, x_test = x_train / 255.0, x_test / 255.0
 
 # Define the neural network model
 model = models.Sequential([
-    layers.Flatten(input_shape=(28, 28)),  # Flatten input images to 1D
-    layers.Dense(128, activation='relu'),  # Dense layer with 128 units and ReLU activation
+    layers.Flatten(input_shape=(28, 28)),   
+    layers.Dense(128, activation='relu'),   
     layers.Dropout(0.2),                   # Dropout layer to prevent overfitting
     layers.Dense(10, activation='softmax') # Output layer with 10 units for 10 classes (digits 0-9)
 ])
